@@ -35,13 +35,10 @@ body {
     line-height: 2.5;
   }
 
-  main {
-    margin-block-start: 10em;
-    margin-inline-start: 5em;
-  }
-
   h1 {
-    font-size: 60px;
+    margin-block-start: 2em;
+    margin-inline-start: 0.5em;
+    font-size: 55px;
     background-image: url("/images/jaggedrocks.avif");
     -webkit-background-clip: text;
     background-clip: text;
@@ -49,8 +46,65 @@ body {
   }
 
   #heyo{
-    font-size: 100px;
+    font-size: 90px;
   }
-  .intro > #img-me {
-    inline-size: 200px;
+  
+  .intro {
+    margin-block-start: 5em;
+    background-image: url("/images/space.jpg");
+    color: whitesmoke;
   }
+  
+  .intro > h2 {
+    padding: 1.5rem;
+    font-size: 36px;
+  }
+
+  .intro > * {
+    margin-inline-start: 0.5em;
+  }
+  
+  .intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 26px;
+  }
+
+  #img-me {
+    max-inline-size: 400px;
+    max-block-size: 400px;
+    padding-inline-end: 30px;
+    margin-block-end: 30px;
+    position: relative;
+    inset-inline-start: 2em;
+  }
+
+.intro-content > p {
+  position: relative;
+  margin-inline: 0.5rem;
+  margin-block-start: 3rem;
+  margin-block-end: 5rem;
+  min-inline-size: 300px;
+
+}
+
+@media screen and (min-width: 500px) {
+
+  h1 {
+    margin-inline-start: 100px;
+  }
+
+.intro > h2 {
+  margin-inline-start: 100px;
+}
+
+  .intro-content {
+    flex-wrap: nowrap;
+    margin-inline-start: 100px;
+  }
+
+  .intro-content > p {
+    margin-inline-start: 100px;
+    margin-block-start: 100px;
+  }
+}

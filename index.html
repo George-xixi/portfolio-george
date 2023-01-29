@@ -13,8 +13,8 @@
   <div class="nav-bar">
     <p>George</p>
     <div class="links">
-      <a id="projects-link">Projects</a>
-      <a id="contact-link">Contact me</a>
+      <a id="projects-link" href="">Projects</a>
+      <a id="contact-link" href="#contact-form">Contact me</a>
       <a id="es-link">Español</a>
       <a id="zh-link">中文</a>
     </div>
@@ -23,11 +23,13 @@
     <h1> <span id="heyo">Heyo!</span> <br>Welcome to my site.</h1>
     <div class="intro">
       <h2>Let me introduce myself.</h2>
-      <img id="img-me" src="./images/George.jpg" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, a, voluptate sed laboriosam facilis
-        perspiciatis quis perferendis, maxime placeat fuga explicabo asperiores temporibus molestiae. Labore commodi
+      <div class="intro-content">
+      <img id="img-me" src="./images/denim.png" alt="me wearing double denim with my arms in the air" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Ipsa, a, voluptate sed laboriosam facilis
+        perspiciatis quis perferendis, maxime placeat fuga explicabo asperiores temporibus molestiae. <br> Labore commodi
         quas qui earum deserunt!
       </p>
+    </div>
     </div>
   </main>
   <div class="projects-div">
@@ -58,7 +60,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
   </div>
-  <div class="contact-form">
+  <div class="contact-form" id="contact-form">
     <h2> Want to get in touch?</h2>
     <form>
       <input name="name" type="text" class="feedback-input" placeholder="Name" />
