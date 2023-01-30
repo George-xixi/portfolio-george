@@ -20,20 +20,22 @@ body {
   display:grid;
   grid-template-columns: 1fr 1fr;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.489);
+  background-color: rgb(255, 255, 255);
   z-index:100;
   }
 
   .nav-bar > p {
   font-size: 40px;
+  font-weight: 600;
   }
 
   .links {
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    line-height: 3;
+    line-height: 2.5;
   }
+
 
   .links > a {
     text-decoration: none;
@@ -42,7 +44,7 @@ body {
     transition: 300ms;
   }
 
-  a:after {
+  .links > a:after {
     content: '';
     width: 0px;
     height: 5px;
@@ -55,11 +57,11 @@ body {
     transition: 300ms;
   }
   
-  a:hover:after {
+  .links > a:hover:after {
     width: 100%;
   }
 
-  a:before {
+  .links > a:before {
     content: '';
     width: 0px;
     height: 5px;
@@ -72,7 +74,7 @@ body {
     transition: 300ms;
   }
   
-  a:hover:before {
+  .links > a:hover:before {
     width: 100%;
   }
 
@@ -129,6 +131,68 @@ body {
 
 }
 
+.projects-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-div > h2 {
+  margin-block: 40px;
+  margin-inline-start: 28px;
+  inline-size: 100%;
+  font-size: 50px;
+  background-image: url("/images/jaggedrocks.avif");
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.projects-div > div {
+inline-size: 100%;
+margin-inline-start: 0px;
+border: 5px solid black;
+border-radius: 10px;
+margin-block: 20px;
+}
+
+.projects-div > div > h3 {
+  font-size: 36px;
+  margin-inline-start: 28px;
+}
+
+.project-inner-content {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2;
+  font-size: 25px;
+}
+
+.project-inner-content > p {
+  align-self: center;
+}
+
+.project-inner-content > img {
+  inline-size: 100%;
+}
+
+.project-inner-content > a {
+  margin: 10px;
+}
+.project-portfolio {
+  background-image: url("/images/space.jpg");
+  color:whitesmoke;
+}
+
+.project-pet {
+  background-image: url("/images/space.jpg");
+  color:whitesmoke;
+}
+
+.project-music {
+  background-image: url("/images/space.jpg");
+  color:whitesmoke;
+}
+
 @media screen and (min-width: 500px) {
 
   h1 {
@@ -147,5 +211,35 @@ body {
   .intro-content > p {
     margin-inline-start: 100px;
     margin-block-start: 100px;
+  }
+
+  .projects-div {
+    margin-inline-start: 100px;
+  }
+
+  .projects-div > h2 {
+    margin-inline-start: 60px;
+  }
+  .projects-div > div {
+    inline-size: 90%;
+  }
+
+  .project-inner-content {
+    flex-wrap: nowrap;
+  }
+  .project-inner-content > img {
+    max-inline-size: 300px;
+    margin: 30px;
+  }
+
+  .project-inner-content > p {
+
+  }
+
+  .project-inner-content > a {
+    position: relative;
+    inset-block-start: -60px;
+    inset-inline-end: -10px;
+    padding: 5px;
   }
 }
