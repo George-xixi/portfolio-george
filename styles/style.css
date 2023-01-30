@@ -32,7 +32,48 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    line-height: 2.5;
+    line-height: 3;
+  }
+
+  .links > a {
+    text-decoration: none;
+    color: black;
+    border-radius: 20%;
+    transition: 300ms;
+  }
+
+  a:after {
+    content: '';
+    width: 0px;
+    height: 5px;
+    display: block;
+    position: relative;
+    inset-inline-start: 50%;
+    z-index: -1;
+    background-image: url("/images/jaggedrocks.avif");
+    transform: translate(-50%, -55px);
+    transition: 300ms;
+  }
+  
+  a:hover:after {
+    width: 100%;
+  }
+
+  a:before {
+    content: '';
+    width: 0px;
+    height: 5px;
+    display: block;
+    position: relative;
+    inset-inline-start: 50%;
+    z-index: -1;
+    background-image: url("/images/jaggedrocks.avif");
+    transform: translate(-50%, 55px);
+    transition: 300ms;
+  }
+  
+  a:hover:before {
+    width: 100%;
   }
 
   h1 {
