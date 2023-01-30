@@ -264,6 +264,26 @@ textarea {
   background: grey; 
 }
 
+footer {
+  background-image: url("/images/space.jpg");
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+footer > h4 {
+  padding-block-start: 10px;
+}
+.credits {
+  padding: 40px;
+  line-height: 3;
+}
+.credits > ul {
+  text-decoration: none;
+  list-style: none;
+}
+
 @media screen and (min-width: 500px) {
   
   .nav-bar {
