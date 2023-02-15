@@ -53,42 +53,8 @@ body {
     color: black;
     border-radius: 20%;
     transition: 300ms;
+    margin-left:5px;
   }
-
-  .links > a:after {
-    content: '';
-    width: 0px;
-    height: 5px;
-    display: block;
-    position: relative;
-    inset-inline-start: 50%;
-    z-index: -1;
-    background-image: url("/images/jaggedrocks.avif");
-    transform: translate(-50%, -55px);
-    transition: 300ms;
-  }
-  
-  .links > a:hover:after {
-    width: 100%;
-  }
-
-  .links > a:before {
-    content: '';
-    width: 0px;
-    height: 5px;
-    display: block;
-    position: relative;
-    inset-inline-start: 50%;
-    z-index: -1;
-    background-image: url("/images/jaggedrocks.avif");
-    transform: translate(-50%, 55px);
-    transition: 300ms;
-  }
-  
-  .links > a:hover:before {
-    width: 100%;
-  }
-
   h1 {
     margin-block-start: 2em;
     margin-inline-start: 0.5em;
@@ -317,6 +283,40 @@ footer > h4 {
 .lang-link {
   line-height: 2.5;
 }
+.links > a:after {
+  content: '';
+  width: 0px;
+  height: 5px;
+  display: block;
+  position: relative;
+  inset-inline-start: 50%;
+  z-index: -1;
+  background-image: url("/images/jaggedrocks.avif");
+  transform: translate(-50%, -55px);
+  transition: 300ms;
+}
+
+.links > a:hover:after {
+  width: 100%;
+}
+
+.links > a:before {
+  content: '';
+  width: 0px;
+  height: 5px;
+  display: block;
+  position: relative;
+  inset-inline-start: 50%;
+  z-index: -1;
+  background-image: url("/images/jaggedrocks.avif");
+  transform: translate(-50%, 55px);
+  transition: 300ms;
+}
+
+.links > a:hover:before {
+  width: 100%;
+}
+
 
   h1 {
     margin-inline-start: 100px;
