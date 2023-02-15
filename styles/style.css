@@ -45,7 +45,7 @@ body {
   }
 
 .lang-link {
-  line-height: 2;
+  line-height: 2.5;
 }
 
   .links > a {
@@ -280,9 +280,6 @@ footer > h4 {
   visibility: visible;
 }
 
-.lang-link {
-  line-height: 2.5;
-}
 .links > a:after {
   content: '';
   width: 0px;
