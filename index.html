@@ -13,10 +13,10 @@
   <div class="nav-bar">
     <p>George</p>
     <div class="links">
-      <a id="projects-link" href="#projects-div">Projects</a>
-      <a id="contact-link" href="#contact-form">Contact me</a>
-      <a id="es-link" href="/es/index-es.html">Español</a>
-      <a id="zh-link" href="/zh-cn/index-zh.html">中文</a>
+      <a class="anchor-link" href="#projects-div">Projects</a>
+      <a class="anchor-link" href="#contact-form">Contact me</a>
+      <a class="lang-link" href="/es/index-es.html">Español</a>
+      <a  class="lang-link" href="/zh-cn/index-zh.html">中文</a>
     </div>
   </div>
   <main>
@@ -42,10 +42,10 @@
       <h3>Portfolio Website</h3>
       <div class="project-inner-content">
         <img src="/images/portfolio-landing.png" />
-        <p>I'm quite judgy when it comes to portfolio websites. <br> I don't like busy websites with animations.<br> While you're here, you can read a bit about my projects. Why not click the GitHub logo by each project to see the whole process? Or perhaps play around with one of the games!  <br>
+        <p>The best websites are simple.<br>I think accessibility is the most important thing when designing for the web. <br> While you're here, you can read a bit about my projects. Why not click the GitHub logo by each project to see the whole process? Or perhaps play around with one of the games!  <br>
           I want to keep things simple and easy to read - I hope you like it!
         </p>
-        <a href="https://github.com/George-xixi" target="_blank"><img src="/images/github-logo.svg"
+        <a href="https://github.com/George-xixi/portfolio-3" target="_blank"><img src="/images/github-logo.svg"
             alt="github-logo"></a>
       </div>
     </div>
@@ -53,9 +53,10 @@
       <h3>Cruise Ship</h3>
       <div class="project-inner-content">
         <img src="/images/cruise-ship.png" />
-        <p>I made an interactive cruise-ship where the user can create their own itinerary.<br> I learnt about Test Driven Development and DOM manipulation - I created different types of objects that could interact with eachother.
+        <p>I made an interactive cruise-ship where the user can create their own itinerary.<br> I learnt about test driven 
+          development and DOM manipulation - I created different types of objects that could interact with eachother.
           <br> This was the first time I had to get user input data from a form - it was super challenging at first.</p>
-        <a href="https://github.com/George-xixi" target="_blank"><img src="/images/github-icon.svg" alt="github-logo">
+        <a href="https://github.com/George-xixi/cruise-ships-gui" target="_blank"><img src="/images/github-icon.svg" alt="github-logo">
         </a>
       </div>
     </div>
@@ -65,7 +66,7 @@
         <img src="/images/virtual-pet.png" />
         <p>This was my first javascript project!<br> Using test driven development, I created dynamic javascript objects with properties such as age, hunger and fitness. Next, I designed and created a user interface with a choice of 3 different pets and unique animations for each one.
           <br> To play this game, you need to feed and play with the pet to keep it alive!</p>
-        <a href="https://github.com/George-xixi" target="_blank"><img src="/images/github-logo.svg"
+        <a href="https://github.com/George-xixi/virtual-pet-gui" target="_blank"><img src="/images/github-logo.svg"
             alt="github-logo"></a>
       </div>
     </div>
@@ -75,7 +76,7 @@
         <img src="/images/weather-app.png" />
         <p>This was my first project built with react!<br> This is an app that can pull weather forecast data from an API. I also added a search function that allows the user to search for the weather anywhere in the UK. <br> 
         I then designed and created a user interface that (i think) looks really pretty.</p>
-        <a href="https://github.com/George-xixi" target="_blank"><img src="/images/github-icon.svg"
+        <a href="https://github.com/George-xixi/weather-app" target="_blank"><img src="/images/github-icon.svg"
             alt="github-logo"></a>
       </div>
     </div>
@@ -84,7 +85,7 @@
       <div class="project-inner-content">
         <img src="/images/music-library.png" />
         <p>This is a music library API built with Node.js, Express.js and PostgreSQL. <br> This API was built using test-driven development, and the testing was done with Mocha, Chai and Supertest. <br> This was made during the back-end module at Command Shift Bootcamp, and working on this project has made me feel much more comfortable working with APIs.</p>
-        <a href="https://github.com/George-xixi" target="_blank"><img src="/images/github-logo.svg"
+        <a href="https://github.com/George-xixi/music-library" target="_blank"><img src="/images/github-logo.svg"
             alt="github-logo"></a>
       </div>
     </div>
@@ -98,9 +99,12 @@
     </div>
     <h2>Or write a message?</h2>
     <form netlify>
-      <input name="name" type="text" class="feedback-input" placeholder="Name" />
-      <input name="email" type="email" class="feedback-input" placeholder="Email" />
-      <textarea name="text" class="feedback-input" placeholder="Write here..."></textarea>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" class="feedback-input" placeholder="Name" />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" class="feedback-input" placeholder="Email" />
+      <label for="text">Write a message for me!</label>
+      <textarea id="text" name="text" class="feedback-input" placeholder="Write here..."></textarea>
       <input type="submit" value="SUBMIT" />
     </form>
   </div>

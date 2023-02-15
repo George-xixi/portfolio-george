@@ -33,13 +33,20 @@ body {
   }
 
   .links {
-    visibility: hidden;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
     line-height: 2.5;
   }
 
+  .anchor-link {
+    width:0;
+    visibility: hidden;
+  }
+
+.lang-link {
+  line-height: 2;
+}
 
   .links > a {
     text-decoration: none;
@@ -176,6 +183,7 @@ margin-block: 20px;
 .project-inner-content > p {
   align-self: center;
   font-size: 20px;
+  padding-inline: 15px;
 }
 
 .project-inner-content > img {
@@ -185,6 +193,7 @@ margin-block: 20px;
 .project-inner-content > a {
   margin: 10px;
 }
+
 .project-portfolio {
   background-image: url("/images/space.jpg");
   color:whitesmoke;
@@ -224,11 +233,16 @@ form {
   max-inline-size:  700px; 
   margin-block-start: 5rem;
   margin-block-end: 10rem;
+  padding-inline: 15px;
+}
+
+form > label {
+  font-size: 25px ;
 }
 
 .feedback-input {
   color: black;
-  font-size: 3rem;
+  font-size: 30px;
   border-radius: 5px;
   line-height: 1;
   background-color: transparent;
@@ -250,7 +264,6 @@ textarea {
   line-height: 150%;
   resize: vertical;
   font: inherit;
-  font-size: 15px;
 }
 
 [type="submit"] {
@@ -290,15 +303,20 @@ footer > h4 {
   list-style: none;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
   
   .nav-bar {
     position: fixed;
   }
 
-  .links {
-    visibility: visible;
-  }
+.anchor-link {
+  width: auto;
+  visibility: visible;
+}
+
+.lang-link {
+  line-height: 2.5;
+}
 
   h1 {
     margin-inline-start: 100px;
@@ -318,14 +336,15 @@ footer > h4 {
   }
 
   .projects-div {
-    margin-inline-start: 100px;
+    margin-inline: 50px;
+    justify-content: center;
   }
 
   .projects-div > h2 {
-    margin-inline-start: 40px;
+    text-align: center;
   }
   .projects-div > div {
-    inline-size: 90%;
+    max-width: 1300px;
   }
 
   .projects-div > div > h3 {
@@ -343,8 +362,8 @@ footer > h4 {
 
   .project-inner-content > a {
     position: relative;
-    inset-block-start: -60px;
-    inset-inline-end: -10px;
+    top: -60px;
+    right: -10px;
     padding-inline: 25px;
   }
 
