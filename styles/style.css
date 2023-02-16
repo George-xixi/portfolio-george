@@ -59,10 +59,6 @@ body {
     margin-block-start: 2em;
     margin-inline-start: 0.5em;
     font-size: 55px;
-    background-image: url("/images/jaggedrocks.avif");
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
   }
 
   #heyo{
@@ -120,10 +116,6 @@ body {
   margin-inline-start: 28px;
   inline-size: 100%;
   font-size: 50px;
-  background-image: url("/images/jaggedrocks.avif");
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 .projects-div > div {
@@ -156,8 +148,19 @@ margin-block: 20px;
   inline-size: 100%;
 }
 
-.project-inner-content > a {
+.project-links {
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+}
+.project-links > a {
   margin: 10px;
+  text-decoration: none;
+}
+
+.project-links > a > img {
+  height: 48px;
+
 }
 
 .project-portfolio {
@@ -179,10 +182,6 @@ margin-block: 20px;
   margin-block: 40px;
   margin-inline-start: 30px;
   font-size: 50px;
-  background-image: url("/images/jaggedrocks.avif");
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 .contact-link-container {
@@ -288,7 +287,7 @@ footer > h4 {
   position: relative;
   inset-inline-start: 50%;
   z-index: -1;
-  background-image: url("/images/jaggedrocks.avif");
+  background-color: black;
   transform: translate(-50%, -55px);
   transition: 300ms;
 }
@@ -357,11 +356,15 @@ footer > h4 {
     margin: 40px;
   }
 
-  .project-inner-content > a {
+  .project-links {
+    flex-direction: column;
+    width: min-content;
+    justify-content:space-around;
+  }
+  .project-links > a {
     position: relative;
-    top: -60px;
-    right: -10px;
-    padding-inline: 25px;
+    padding-inline: 5px;
+    height: min-content;
   }
 
   .contact-form > h2 {
