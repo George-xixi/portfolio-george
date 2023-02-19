@@ -104,10 +104,13 @@
     </div>
     <h2>¿O escribir un mensaje?</h2>
     <form netlify>
-      <input name="name" type="text" class="feedback-input" placeholder="Nombre" />
-      <input name="email" type="email" class="feedback-input" placeholder="Email" />
-      <textarea name="text" class="feedback-input" placeholder="Escribe aquí..."></textarea>
-      <input type="submit" value="ENVIAR" />
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" class="feedback-input" placeholder="Nombre" />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" class="feedback-input" placeholder="Email" />
+      <label for="text">¡Escríbeme aquí!</label>
+      <textarea id="text" name="text" class="feedback-input" placeholder="Escribe aquí"></textarea>
+      <input type="submit" value="SUBMIT" />
     </form>
   </div>
   <footer>

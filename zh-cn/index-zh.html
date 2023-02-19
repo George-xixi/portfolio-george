@@ -104,9 +104,12 @@
     </div>
     <h2>也可以留言。</h2>
     <form netlify>
-      <input name="name" type="text" class="feedback-input" placeholder="名字" />
-      <input name="email" type="email" class="feedback-input" placeholder="邮件" />
-      <textarea name="text" class="feedback-input" placeholder="开始写……"></textarea>
+      <label for="name">名字</label>
+      <input id="name" name="name" type="text" class="feedback-input" placeholder="名字" />
+      <label for="email">邮件</label>
+      <input id="email" name="email" type="email" class="feedback-input" placeholder="邮件" />
+      <label for="text">留言给我吧!</label>
+      <textarea id="text" name="text" class="feedback-input" placeholder="开始写……"></textarea>
       <input type="submit" value="发出" />
     </form>
   </div>
