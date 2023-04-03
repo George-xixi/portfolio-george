@@ -17,7 +17,7 @@ I hope this site shows my passion for simple, accessible and good looking web de
 - Contact form.
 
 ## Languages
-This website is available in English, Spanish and Mandarin Chinese. All content is written by me - if you think any of the Spanish or Chinese could be imporved, I'd be super grateful!
+This website is available in English, Spanish and Mandarin Chinese. All content is written by me - if you have any suggestions for how the Spanish or Chinese could be improved, I'd be super grateful!
 
 ## The Future
 As I work on more projects, I will add the best ones to the site. This won't be quick, as I need to write content in 3 languages for each project!
